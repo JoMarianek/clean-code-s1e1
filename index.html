@@ -8,54 +8,54 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <header>
-      <div class="aaa">
-        <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
+    <header class="header">
+      <div class="header__container">
+        <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix" class="header__image">
         <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower"
-        >Want more details?</a>
+        class="header__link">Want more details?</a>
       </div>
     </header>
     <main>
-      <section class="centered-main-page-element">
-          <h2>Add Item</h2>
-          <div class="task-row-wrapper">
-            <input id="new-task"class="task" type="text">
-            <button>Add</button>
+      <section class="section section--add">
+          <h2 class="section__title">Add Item</h2>
+          <div class="section__task-row-wrapper">
+            <input id="new-task" class="section__input" type="text">
+            <button class="section__button">Add</button>
           </div>
       </section>
-      <section class="centered-main-page-element">
-        <h2>Todo</h2>
-        <ul id="incompleteTasks">
-          <li>
-            <input type="checkbox" id="task1">
-            <label for="task1" class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./remove.svg" alt="remove arrow">
+      <section class="section section--todo">
+        <h2 class="section__title">Todo</h2>
+        <ul class="section__list">
+          <li class="section__item">
+            <input type="checkbox" id="task1" class="section__checkbox">
+            <label for="task1" class="section__control section__label">Pay Bills</label>
+            <input type="text" class="section__control section__input">
+            <button class="section__button section__button--edit">Edit</button>
+            <button class="section__button section__button--delete">
+              <img src="./remove.svg" alt="remove arrow" class="section__icon">
             </button>
           </li>
-          <li class="editMode">
-            <input type="checkbox" id="task2">
-            <label for="task2" class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete">
-              <img src="./remove.svg" alt="remove arrow">
+          <li class="section__item section__item--editMode">
+            <input type="checkbox" id="task2" class="section__checkbox">
+            <label for="task2" class="section__control section__label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="section__control section__input">
+            <button class="section__button section__button--edit">Save</button>
+            <button class="section__button section__button--delete">
+              <img src="./remove.svg" alt="remove arrow" class="section__icon">
             </button>
           </li>
         </ul>
       </section>
-      <section class="centered-main-page-element">
-        <h2>Completed</h2>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" id="task3" checked>
-            <label for="task3" class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./remove.svg" alt="remove arrow">
+      <section class="section section--completed">
+        <h2 class="section__title">Completed</h2>
+        <ul class="section__list section__list--completed">
+          <li class="section__item">
+            <input type="checkbox" id="task3" class="section__checkbox" checked>
+            <label for="task3" class="section__control section__label">See the Doctor</label>
+            <input type="text" class="section__control section__input">
+            <button class="section__button section__button--edit">Edit</button>
+            <button class="section__button section__button--delete">
+              <img src="./remove.svg" alt="remove arrow" class="section__icon">
             </button>
           </li>
         </ul>
