@@ -86,7 +86,7 @@ button {
   color: #333;
 }
 
-/* New Task not a label anymore h2 instead
+/* New Task not a label anymore heading2 instead
 label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
