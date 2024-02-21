@@ -91,8 +91,8 @@ label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 } */
-.section__input {
-  width: 318px;
+.section__input.section__input--add {
+  width: 436px;
 }
 
 /* Task list */
@@ -136,15 +136,15 @@ label[for="new-task"] {
 }
 
 /* Edit Task */
-.section__input {
+.section__control.section__input {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+.section__input.section__input--editMode {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+.section__label.section__label--editMode {
   display: none;
 }
